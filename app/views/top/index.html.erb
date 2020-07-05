@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light">
+  <div class="continer">
+    <ul class="nav navbar-nav pull-xs-fight">
+      <li class="nav-item">
+	<a class="nav-link" href="/users/sign_in">Log in</a>
+      </li>
+      <li class="nav-item">
+	<a class="nav-link" href="/users/sign_up">Sign up</a>
+      </li>
+      <li class="nav-item">
+	<form method="post" name="sign_out" action="/users/sign_out">
+	  <input type="hidden" name="_method" value="delete" />
+	  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+	  <a class="nav-link" href="javascript:sign_out.submit()">Log out</a>
+	</form>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<h2>You are logged In</h2>
+
+<dl>
+  <dt>User Email</dt>
+  <dd><%= current_user.email %></dd>
+  <dt>Encrypted Password</dt>
+  <dd><%= current_user.encrypted_password %></dd>
+  <dt>Password Salt</dt>
+  <dd><%= current_user.password_salt %></dd>
+</dl>
