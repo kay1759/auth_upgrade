@@ -1,9 +1,9 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable, :encryptable
+  devise :database_authenticatable, :registerable
 
-=begin --- auto convert to bcrypt
+#=begin
   def valid_password?(pass)
     stretches = Rails.application.config.devise.stretches
     pepper = Rails.application.config.devise.pepper
@@ -18,6 +18,6 @@ class User < ApplicationRecord
     end
   end
   alias_method :devise_valid_password?, :valid_password?
-=end
+#=end
 
 end
