@@ -17,9 +17,9 @@ Decribing Stage Custom is only for record.
 ## Environment:
 Latest environment is as below.
 
-* Arch Linux version 5.19.2-arch1-1
-* ruby 3.0.2p20
-* Rails 7.0.3.1
+* Arch Linux version 6.4.1-arch2-1
+* ruby 3.1.2p20
+* Rails 7.0.5.1
 
 
 Programing environment is as below.
@@ -30,7 +30,7 @@ Programing environment is as below.
 
 
 ## Application Installation Instructions:
-    git clone git@github.com:kay1759/auth_upgrade.git
+    git clone https://github.com/kay1759/auth_upgrade.git
     cd auth_upgrade
     bundle install --path vendor/bundle
     bundle exec rake db:migrate
