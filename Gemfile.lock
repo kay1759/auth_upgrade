@@ -188,7 +188,7 @@ GEM
     spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
       spring (>= 4)
-    sqlite3 (1.6.3-x86_64-linux)
+    sqlite3 (2.9.5-x86_64-linux-gnu)
     thor (1.5.0)
     timeout (0.6.1)
     tzinfo (2.0.6)
@@ -222,7 +222,7 @@ DEPENDENCIES
   rspec-rails
   spring
   spring-watcher-listen
-  sqlite3 (~> 1.4)
+  sqlite3 (~> 2.9)
   tzinfo-data
   web-console (>= 3.3.0)
 
